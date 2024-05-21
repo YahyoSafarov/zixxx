@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #232429;
+}
+
+html::-webkit-scrollbar{
+  width: .8rem;
+}
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+  background: #686969;
+} 
+
+@layer components {
+  .btn {
+    display: inline-block;
+    border-radius: 16px;
+    padding: 16px 32px 16px 32px;
+    color: #fff;
+    background: #FF662D;
+    font-size: 20px;
+    transition: 0.5s ease;
+  }
+  .btn:hover{
+    background: transparent;
+    color: #FF662D;
+    box-shadow: 0 0 20px #FF662D;
+  }
+
+  .card {
+    @apply p-3 rounded-md bg-white shadow-md h-full;
+  }
+}
+
